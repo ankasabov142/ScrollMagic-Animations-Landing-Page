@@ -1,32 +1,40 @@
 body {
+  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+}
+
+h1 {
+  font-size: 80px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 50%);
 }
 
 .container-1 {
   width: 100vw;
-  height: 100ch;
-  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
-  top: 0%;
-  position: absolute;
-  right: 0%;
+  height: 100vh;
+  background: transparent;
 }
 
 .container-2 {
   width: 100vw;
-  height: 100ch;
-  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
-  top: 100%;
-  position: relative;
-  right: 0%;
+  height: 100vh;
+  background-color: black;
 }
 
 .container-3 {
-  top: 200%;
-  position: relative;
-  right: 0%;
+  background-color: green;
   width: 100vw;
-  height: 100ch;
-  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
+  height: 100vh;
+}
+
+.container-4 {
+  width: 100vw;
+  height: 100vh;
+  background-color: blanchedalmond;
 }
 
 .navbar {
