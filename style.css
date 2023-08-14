@@ -6,11 +6,16 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 120px;
   position: absolute;
   left: 50%;
   top: 30%;
   transform: translate(-50%, 50%);
+  font-family: "Caprasimo", cursive;
+  font-family: "Kanit", sans-serif;
+  font-family: "Lilita One", cursive;
+  font-family: "Questrial", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .container-1 {
