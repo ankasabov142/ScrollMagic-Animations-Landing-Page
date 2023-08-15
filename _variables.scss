@@ -1,0 +1,15 @@
+@mixin font{
+    font-family: "Bodoni Moda", serif;
+    font-family: "Caprasimo", cursive;
+    font-family: "Kanit", sans-serif;
+    font-family: "Lilita One", cursive;
+    font-family: "Questrial", sans-serif;
+    font-family: "REM", sans-serif;
+    font-family: "Work Sans", sans-serif;
+}
+
+$bg-color:#d4e1f2;
+@mixin picAdjustment{
+    width: 100%;
+      object-fit: contain;
+}

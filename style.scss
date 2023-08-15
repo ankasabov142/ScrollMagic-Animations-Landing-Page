@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Caprasimo&family=Kanit:ital,wght@0,600;1,300&family=Lilita+One&family=Questrial&family=REM&family=Work+Sans:wght@500&display=swap");
-
+@import "variables";
 header {
   background-color: transparent;
   position: absolute;
   width: 100vw;
   z-index: 1;
+  @include font;
+  font-size: 20px;
+
+  .navbar-brand {
+    font-size: 30px;
+  }
 }
 .main {
-  background-image: url(/resources/Arctic-Fox-1-MAIN.jpg);
+  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
+  background-color: $bg-color;
   width: 100vw;
   height: 100vh;
   h1 {
@@ -18,32 +25,52 @@ header {
     left: 50%;
     top: 38%;
     transform: translate(-50%);
-    font-family: "Bodoni Moda", serif;
-    font-family: "Caprasimo", cursive;
-    font-family: "Kanit", sans-serif;
-    font-family: "Lilita One", cursive;
-    font-family: "Questrial", sans-serif;
-    font-family: "REM", sans-serif;
-    font-family: "Work Sans", sans-serif;
+    @include font;
   }
 }
 .specs {
-background-color: #d4e1f2;
+  background-color: $bg-color;
   width: 100vw;
   height: 100vh;
-  
-  .specsImg{
-    #imgHolder{
+
+  .specsImg {
+    #imgHolder {
       position: relative;
       top: 20%;
-      left:12%;
+      left: 12%;
 
-      #imgSpecs{
+      #imgSpecs {
         width: 80%;
         height: 500px;
-        
+
         object-fit: contain;
       }
+    }
+  }
+  .specsText {
+    @include font;
+  }
+}
+
+.pictures {
+  background-color: $bg-color;
+  width: 100vw;
+  height: 100vh;
+
+  .imgFromPicDiv {
+    width: 100%;
+    position: relative;
+    #imgPicDiv1 {
+     margin-top: 120px;
+     @include picAdjustment
+    }
+    #imgPicDiv2 {
+      margin-top: 220px;
+      @include picAdjustment
+    }
+    #imgPicDiv3 {
+      margin-top: 320px;
+      @include picAdjustment
     }
   }
 }

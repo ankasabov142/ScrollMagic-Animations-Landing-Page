@@ -4,10 +4,22 @@ header {
   position: absolute;
   width: 100vw;
   z-index: 1;
+  font-family: "Bodoni Moda", serif;
+  font-family: "Caprasimo", cursive;
+  font-family: "Kanit", sans-serif;
+  font-family: "Lilita One", cursive;
+  font-family: "Questrial", sans-serif;
+  font-family: "REM", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+header .navbar-brand {
+  font-size: 30px;
 }
 
 .main {
-  background-image: url(/resources/Arctic-Fox-1-MAIN.jpg);
+  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
+  background-color: #d4e1f2;
   width: 100vw;
   height: 100vh;
 }
@@ -42,6 +54,43 @@ header {
 .specs .specsImg #imgHolder #imgSpecs {
   width: 80%;
   height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.specs .specsText {
+  font-family: "Bodoni Moda", serif;
+  font-family: "Caprasimo", cursive;
+  font-family: "Kanit", sans-serif;
+  font-family: "Lilita One", cursive;
+  font-family: "Questrial", sans-serif;
+  font-family: "REM", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.pictures {
+  background-color: #d4e1f2;
+  width: 100vw;
+  height: 100vh;
+}
+.pictures .imgFromPicDiv {
+  width: 100%;
+  position: relative;
+}
+.pictures .imgFromPicDiv #imgPicDiv1 {
+  margin-top: 120px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pictures .imgFromPicDiv #imgPicDiv2 {
+  margin-top: 220px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pictures .imgFromPicDiv #imgPicDiv3 {
+  margin-top: 320px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
