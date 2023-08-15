@@ -1,67 +1,47 @@
-body {
-  background-image: url("/resources/Arctic-Fox-1-MAIN.jpg");
-  overflow-x: hidden;
-  background-repeat: no-repeat;
-  background-size: 100% 25%;
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Caprasimo&family=Kanit:ital,wght@0,600;1,300&family=Lilita+One&family=Questrial&family=REM&family=Work+Sans:wght@500&display=swap");
+header {
+  background-color: transparent;
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
 }
 
-h1 {
-  font-size: 120px;
+.main {
+  background-image: url(/resources/Arctic-Fox-1-MAIN.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+.main h1 {
   position: absolute;
+  font-size: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, 50%);
+  top: 38%;
+  transform: translate(-50%);
+  font-family: "Bodoni Moda", serif;
   font-family: "Caprasimo", cursive;
   font-family: "Kanit", sans-serif;
   font-family: "Lilita One", cursive;
   font-family: "Questrial", sans-serif;
+  font-family: "REM", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
 
-.container-1 {
-  width: 100vw;
-  height: 100vh;
-  background: transparent;
-}
-
-.container-2 {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-}
-
-.container-3 {
-  background-color: green;
+.specs {
+  background-color: #d4e1f2;
   width: 100vw;
   height: 100vh;
 }
-
-.container-4 {
-  width: 100vw;
-  height: 100vh;
-  background-color: blanchedalmond;
+.specs .specsImg #imgHolder {
+  position: relative;
+  top: 20%;
+  left: 12%;
 }
-
-.navbar {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  background: transparent;
-  width: 100vw;
-  height: 20vh;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar .navBut {
-  margin-top: 30px;
-  width: 150px;
-  height: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: transparent;
-  font-size: 20px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.specs .specsImg #imgHolder #imgSpecs {
+  width: 80%;
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
