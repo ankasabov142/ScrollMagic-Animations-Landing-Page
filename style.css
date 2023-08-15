@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Caprasimo&family=Kanit:ital,wght@0,600;1,300&family=Lilita+One&family=Questrial&family=REM&family=Work+Sans:wght@500&display=swap");
 header {
   background-color: transparent;
-  position: absolute;
   width: 100vw;
   z-index: 1;
   font-family: "Bodoni Moda", serif;
@@ -39,6 +38,13 @@ header .navbar-brand {
   font-family: "Questrial", sans-serif;
   font-family: "REM", sans-serif;
   font-family: "Work Sans", sans-serif;
+}
+.main #mainSnowing {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .specs {
@@ -107,4 +113,49 @@ header .navbar-brand {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#snow-container {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: opacity 500ms;
+  width: 1536px;
+}
+
+.snow {
+  animation: fall ease-in infinite, sway ease-in-out infinite;
+  color: skyblue;
+  position: absolute;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    opacity: 1;
+  }
+}
+@keyframes sway {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 50px;
+  }
+  50% {
+    margin-left: -50px;
+  }
+  75% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
