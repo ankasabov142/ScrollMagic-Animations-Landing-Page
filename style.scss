@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Caprasimo&family=Kanit:ital,wght@0,600;1,300&family=Lilita+One&family=Questrial&family=REM&family=Work+Sans:wght@500&display=swap");
 @import "variables";
 
+// gsap.to('#mainSnowing',{
+//   scale:2,
+//   opacity:0,
+//   onComplete(){(a)=>{
+//     const mainSnowing=document.getElementById("mainSnowing");
+//     mainSnowing.parentNode.removeChild(mainSnowing);
+//   }
+//   },
+//   duration: 12
+  
+// })
+//  /*id="mainSnowing"
+//  src="/resources/pngimg.com - snow_PNG3.png"
+//  alt=""*/
+
+
 
 
 
@@ -47,7 +63,8 @@ header {
     #imgHolder {
       position: relative;
       top: 20%;
-      left: 12%;
+      left: -12%;
+      opacity: 0;
 
       #imgSpecs {
         width: 80%;

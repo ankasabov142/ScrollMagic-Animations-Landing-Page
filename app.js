@@ -1,9 +1,22 @@
-/* <div class="row foxVideo">
-          <video
-            src="/resources/Encounter a young wild white Arctic Fox.mp4"
-          ></video>
-        </div> */
-//Accesing the video and the div that contains it
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+gsap.to('#imgSpecs',{
+  opacity:1,
+  duration:3,
+x: 300,
+  scrollTrigger:{
+    trigger:'.specs',
+  start:'top 50%',
+  toggleActions:'play restart reverse resume'
+  }
+})
+
+
+
+
+
 const intro = document.querySelector(".foxVideo");
 const video = intro.querySelector("video");
 
